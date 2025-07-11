@@ -6,25 +6,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: sans-serif;
-      padding: 20px;
-      background-color: #f9f9f9;
-    }
-    h1 {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      background-color: #fbe9d5;
       color: #333;
     }
+
+    header {
+      background-color: #f26522;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header img {
+      height: 40px;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      margin: 0;
+    }
+
+    .container {
+      padding: 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+
     .dvinci-job-widget {
-      margin-top: 20px;
+      margin-top: 2rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    a {
+      color: #f26522;
     }
   </style>
 </head>
 <body>
 
-  <h1>Aktuelle Stellenangebote bei Vinos</h1>
+  <header>
+    <img src="Vinos_Logo_Dunkel_Druck.png" alt="Vinos Logo">
+    <h1>Aktuelle Stellenangebote</h1>
+  </header>
 
-  <!-- d.vinci Job Widget -->
-  <div class="dvinci-job-widget"></div>
+  <div class="container">
+    <div class="dvinci-job-widget"></div>
+  </div>
+
+  <footer>
+    © Wein & Vinos GmbH – <a href="https://www.vinos.de" target="_blank">vinos.de</a>
+  </footer>
+
   <script defer src="https://hawesko-gruppe.dvinci-easy.com/appo/public/jobWidgetLoader/4047722b-26ef-458e-a19a-b0d97cb6fa32.js"></script>
-
 </body>
 </html>
